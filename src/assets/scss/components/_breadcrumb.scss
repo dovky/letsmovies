@@ -1,0 +1,7 @@
+.breadcrumb {
+    &-item {
+        &.active {
+            color: $green !important;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+// Config's
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+::selection {
+    background: $green;
+    color: $white;
+}
+
+body {
+    background: $bluenavy;
+    @extend .ft-roboto;
+    font-size: 16pt;
+    font-weight: 400;
+    @extend .lt-deflt;
+}
+
+// Content Main
+.conts {
+    &-main {
+        display: flex;
+        position: relative;
+        padding: 72px 0px 82px;
+
+        // Card
+        .cardbx {
+
+            // Card Movies
+            &-movis {
+                margin-bottom: 62px;
+
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
+
+// Glide
+.glide {
+    &__slides {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    &__slide {
+        display: flex;
+        position: relative;
+        height: 270px;
+        width: 190px;
+
+        .movisbx {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
